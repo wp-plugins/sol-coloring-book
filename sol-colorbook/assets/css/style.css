@@ -1,0 +1,153 @@
+html {padding:0; margin:0; border:0;}
+
+#coloring_book_image {
+    float:left; 
+    width:600px; 
+    height:790px;
+    z-index: 10;
+    background-color: white;
+    position: relative;
+    padding-right: 2px;  
+}
+#styletip {
+    width:150px;     float:left;
+}
+#colors {
+    float:left; 
+    border-left:2px solid black;
+    width:130px; 
+    height:790px;
+    overflow-x:scroll;
+    overflow-x:hidden;
+    
+}
+input.marker {
+    width:120px; 
+    height:26px; 
+    padding:0; 
+    margin:0; 
+    border:0;
+    position: relative;
+    z-index: 5;
+    left:-50px;
+}
+input.marker-out {
+    left:0px;
+}
+
+input.brush {
+    width:120px; 
+    height:26px; 
+    padding:0; 
+    margin:0; 
+    border:0;
+    position: relative;
+    z-index: 5;
+    left:-50px;
+}
+input.brush-out {
+    left:0px;
+}
+
+input.crayon {
+    width:120px; 
+    height:26px; 
+    padding:0; 
+    margin:0; 
+    border:0;
+    position: relative;
+    z-index: 5;
+    left:-50px;
+}
+input.crayon-out {
+    left:0px;
+}
+
+input.pencil {
+    width:120px; 
+    height:26px; 
+    padding:0; 
+    margin:0; 
+    border:0;
+    position: relative;
+    z-index: 5;
+    left:-50px;
+}
+input.pencil-out {
+    left:0px;
+}
+
+#undo_redo, #reset_image, #print_colorpage {
+    clear: left;
+    float: left;
+    font-family: lobster;
+    font-size:14px;
+    font-weight:bold;
+    color:black;
+    padding: 2px 8px;
+    margin: 2px auto;
+    width: 100px;
+    border: 1px solid black;
+}
+#undo_redo {
+    background-color: orange;
+}
+#reset_image {
+    background-color: olivedrab;
+}
+#print_colorpage {
+    background-color: deepskyblue;
+    text-align: center;
+}
+
+#colorpage_logo_link {
+    cursor:pointer;
+}
+
+.colorbook-sidebar {
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 2%;
+    padding: 0 0 0 2%;
+    width: 31%;
+}
+
+
+
+@media print { 
+    .no-print, .no-print *  {       
+        display: none !important;     
+    }
+}
+
+@media (min-height: 801px) and (max-height:1200px) and (min-width:768px) { /* Tablet portrait (768x1024) */
+    #coloring_book_image {width:600px; height:799px; }
+    #colors {height:799px;}
+    /*#styletip {width:600px;}*/
+}
+@media (min-height: 769px) and (max-height:800px) and (min-width:768px) { /* Tablet landscape (1024x768) */
+    #coloring_book_image {width:554px; height:739px; }
+    #colors {height:739px;}
+    /*#styletip {width:554px;} */
+}
+@media (min-height: 769px) and (max-height:820px) and (min-width: 480px) and (max-width:620px) { /* Small tablet portrait (600x800) */
+    #coloring_book_image {width:450px; height:580px; }
+    #colors {height:580px;}
+   /* #styletip {width:450px;}*/
+}
+@media (min-height: 600px) and (max-height:768px) { /* Small tablet landscape (800x600) */
+    #coloring_book_image {width:450px; height:600px; }
+    #colors {height:600px;}
+    /*#styletip {width:450px;} */
+}
+@media (min-height: 480px) and (max-height:599px) { /* mobile portrait 320 x 480 */
+    #coloring_book_image {width:180px; height:240px; }
+    #colors {height:240px;}
+    /*#styletip {width:180px;} */
+}
+@media (min-height: 320px) and (max-height:479px) { /* mobile landscape 480 x 320 */
+    #coloring_book_image {width:240px; height:320px; }
+    #colors {height:320px;}
+    /*#styletip {width:240px;}  */
+}
